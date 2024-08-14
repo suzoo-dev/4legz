@@ -11,6 +11,7 @@ export const env = createEnv({
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
+    // CLERK_SIGN_IN_FORCE_REDIRECT_URL: z.string(),
   },
 
   /**

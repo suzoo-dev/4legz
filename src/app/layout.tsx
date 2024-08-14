@@ -1,8 +1,8 @@
 import {
   ClerkProvider,
-  SignInButton,
+} from '@clerk/nextjs'
+import {
   SignedIn,
-  SignedOut,
   UserButton
 } from '@clerk/nextjs'
 import "@/styles/globals.css";
@@ -25,9 +25,6 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
         <body>
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
           <SignedIn>
             <UserButton />
           </SignedIn>
